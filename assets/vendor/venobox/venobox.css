@@ -189,7 +189,8 @@ Please do NOT edit this part!
     bottom: 0;
     overflow-x: hidden;
     overflow-y: scroll;
-    
+    overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
     z-index: 20;
     max-height: 100%;
 }
