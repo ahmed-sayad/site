@@ -420,6 +420,29 @@
             
             
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                      <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>A9 Abdo Street, Qwisna, EGY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>ahmedelsayad480@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>Encrypted</p>
+              </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20753.2069136684!2d31.085334937376565!3d30.569847025600346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d9f7af998a71%3A0xe5f493e145e65066!2sKafr%20Abou%20El-Hassan%2C%20Quweisna%2C%20Menofia%20Governorate!5e1!3m2!1sen!2seg!4v1610359744301!5m2!1sen!2seg" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>            </div>
+
+              </div>
+            
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -452,28 +475,7 @@
             </form>
           </div>
 
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A9 Abdo Street, Qwisna, EGY 535022</p>
-              </div>
 
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>ahmedelsayad480@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>Encrypted</p>
-              </div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20753.2069136684!2d31.085334937376565!3d30.569847025600346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d9f7af998a71%3A0xe5f493e145e65066!2sKafr%20Abou%20El-Hassan%2C%20Quweisna%2C%20Menofia%20Governorate!5e1!3m2!1sen!2seg!4v1610359744301!5m2!1sen!2seg" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>            </div>
-
-              </div>
 
 
         </div>
@@ -482,6 +484,63 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+  
+  
+  
+      <div class="fcf-form-wrap">
+        <div id="fcf-form">
+            <form class="fcf-form-class" method="post" action="fcf-assets/fcf.process.php">
+
+                <div class="field">
+                    <label for="Name" class="label has-text-weight-normal">Your name</label>
+                    <div class="control">
+                        <input type="text" name="Name" id="Name" class="input is-full-width" maxlength="100"
+                            data-validate-field="Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="Email" class="label has-text-weight-normal">Your email address</label>
+                    <div class="control">
+                        <input type="email" name="Email" id="Email" class="input is-full-width" maxlength="100"
+                            data-validate-field="Email">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="Phone" class="label has-text-weight-normal">Subject (optional)</label>
+                    <div class="control">
+                        <input type="tel" name="Phone" id="Phone" class="input is-full-width" maxlength="30"
+                            data-validate-field="Phone">
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="Message" class="label has-text-weight-normal">Your message</label>
+                    <div class="control">
+                        <textarea name="Message" id="Message" class="textarea" maxlength="3000" rows="5"
+                            data-validate-field="Message"></textarea>
+                    </div>
+                </div>
+                <div id="fcf-status" class="fcf-status"></div>
+                <div class="field">
+                    <div class="buttons">
+                        <button id="fcf-button" type="submit" class="button is-link is-medium is-fullwidth">Send
+                            Message</button>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <div id="fcf-thank-you" style="display:none">
+            <!-- Thank you message goes below -->
+            <strong>Thank you</strong>
+            <p>Thanks for contacting me, I will get back in touch with you soon.</p>
+            <!-- Thank you message goes above -->
+        </div>
+    </div>
+
+    <!-- the lines above are needed -->
+  
+  
+  
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -509,6 +568,8 @@
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
+  <script src="fcf-assets/js/fcf.just-validate.min.js"></script>
+  <script src="fcf-assets/js/fcf.form.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
