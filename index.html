@@ -26,7 +26,17 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
+  
+   <!-- Audio for nav bar when transimations -->
+      <script>
+    var beep = new Audio();
+        beep.src="assets/Audio/menu-sound.mp3";
+        
+        function playBtnSound (num){
+            beep.play();
+        } 
+    </script>
+  
 </head>
 
 <body>
@@ -52,12 +62,12 @@
 
       <nav class="nav-menu">
         <ul>
-          <li ><a href="#hero"><i class="bx bx-home"></i> <span>Main</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#facts-skills"><i class="bx bx-server"></i> Facts &amp; Skills</a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume "CV"</span></a></li>
-          <li><a href="#favquotes"><i class="bx bx-book-content"></i>Fav-Quotes</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i>Contact with me</a></li>
+          <li ><a href="#hero" onclick="beep.play(1)"><i class="bx bx-home"></i> <span>Main</span></a></li>
+          <li><a href="#about" onclick="beep.play(2)"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#facts-skills" onclick="beep.play(3)"><i class="bx bx-server"></i> Facts &amp; Skills</a></li>
+          <li><a href="#resume" onclick="beep.play(4)"><i class="bx bx-file-blank"></i> <span>Resume "CV"</span></a></li>
+          <li><a href="#favquotes" onclick="beep.play(5)"><i class="bx bx-book-content"></i>Fav-Quotes</a></li>
+          <li><a href="#contact" onclick="beep.play(6)"><i class="bx bx-envelope"></i>Contact with me</a></li>
 
         </ul>
       </nav><!-- .nav-menu -->
@@ -483,7 +493,7 @@
     </div>
   </footer><!-- End  Footer -->
 
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <a href="#" class="back-to-top" onclick="beep.play(7)"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
