@@ -101,24 +101,7 @@
     top: 8px;
     display: block;
 }
-.vbox-prev{
-    left: 15px;
-}
-.vbox-next{
-    right: 15px;
-}
-.vbox-prev span{
-    left: 10px;
-    -ms-transform: rotate(-135deg);
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-}
-.vbox-next span{
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    right: 10px;
-}
+
 /* ------- inline window ------ */
 .vbox-inline{
     width: 420px;
