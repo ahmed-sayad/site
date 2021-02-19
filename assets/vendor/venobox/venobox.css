@@ -99,17 +99,7 @@
 
 
 /* ----- navigation ARROWS ----- */
-.vbox-next, .vbox-prev{
-    position: fixed;
-    top: 50%;
-    margin-top: -15px;
-    overflow: hidden;
-    cursor: pointer;
-    display: block;
-    width: 45px;
-    height: 45px;
-    z-index: 99;
-}
+
 .vbox-next span, .vbox-prev span{
     position: relative;
     width: 20px;
